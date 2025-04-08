@@ -7,4 +7,12 @@
 *.vdb.tar.gz
 *.vdb.tar.bz2
 main
-/buildbuild/
+/build/
+/build_debug/
+/build_release/
+/build_release_debug/
+/build_release_debug_debug/
+/build_release_debug_release/
+/build_release_release/
+/build_release_release_release/
+CMakeLists.txt.user
