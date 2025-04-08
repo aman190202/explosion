@@ -1,0 +1,9 @@
+.DS_Store
+*.vdb
+*.vdb.gz
+*.vdb.bz2
+*.vdb.zip
+*.vdb.tar
+*.vdb.tar.gz
+*.vdb.tar.bz2
+main

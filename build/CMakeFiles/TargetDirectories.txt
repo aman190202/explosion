@@ -1,0 +1,4 @@
+/Users/aman/Developer/rendering_explosions/build/CMakeFiles/volume_render.dir
+/Users/aman/Developer/rendering_explosions/build/CMakeFiles/analyze_vdb.dir
+/Users/aman/Developer/rendering_explosions/build/CMakeFiles/edit_cache.dir
+/Users/aman/Developer/rendering_explosions/build/CMakeFiles/rebuild_cache.dir
