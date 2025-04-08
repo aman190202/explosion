@@ -7,3 +7,4 @@
 *.vdb.tar.gz
 *.vdb.tar.bz2
 main
+/buildbuild/

@@ -1,1 +1,0 @@
-/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/opt/homebrew/opt/llvm/lib CMakeFiles/analyze_vdb.dir/analyze_vdb.cpp.o -o analyze_vdb   -L/opt/homebrew/lib  -L/opt/homebrew/opt/libomp/lib  -Wl,-rpath,/opt/homebrew/lib -Wl,-rpath,/opt/homebrew/opt/libomp/lib -lopenvdb -ltbb -lboost_system -lIex-3_3 -lIlmThread-3_3 -lOpenEXR-3_3 -lz

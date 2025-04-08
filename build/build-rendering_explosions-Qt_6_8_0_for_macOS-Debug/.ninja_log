@@ -1,5 +1,0 @@
-# ninja log v6
-1	1441	1744146671623571399	CMakeFiles/volume_render.dir/volume_render.cpp.o	c265d8a9b53159c0
-1443	1572	1744146673065894031	volume_render	1094c4a733804128
-1	1600	1744146671623786692	CMakeFiles/analyze_vdb.dir/analyze_vdb.cpp.o	b51aa56db01f50d8
-1600	1633	1744146673222524369	analyze_vdb	7f482a5bc2c9ebfd
