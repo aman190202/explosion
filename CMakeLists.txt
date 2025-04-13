@@ -20,9 +20,16 @@ find_package(OpenMP REQUIRED)
 include_directories(
     /opt/homebrew/include
     /opt/homebrew/include/openvdb
+    /opt/homebrew/include/openvdb/include
     /opt/homebrew/opt/libomp/include
     ${CMAKE_CURRENT_SOURCE_DIR}/Eigen
+    /opt/homebrew/Cellar/openvdb
+    /opt/homebrew/Cellar/openvdb/include
 )
+
+list(APPEND CMAKE_MODULE_PATH "/usr/local/lib/cmake/OpenVDB")
+
+find_package(OpenVDB "12.0.1" REQUIRED COMPONENTS openvdb nanovdb)
 
 # Link directories
 link_directories(
@@ -33,6 +40,8 @@ link_directories(
 # Create executables
 add_executable(volume_render volume_render.cpp)
 add_executable(analyze_vdb analyze_vdb.cpp)
+add_executable(vdb_to_nvdb vdb_to_nvdb.cpp)
+add_executable(nvdb_to_vdb nvdb_to_vdb.cpp)
 
 # Link libraries
 target_link_libraries(volume_render 
@@ -55,3 +64,8 @@ target_link_libraries(analyze_vdb
     OpenEXR-3_3
     z
 )
+
+target_compile_definitions(vdb_to_nvdb PRIVATE "NANOVDB_USE_OPENVDB")
+target_link_libraries(vdb_to_nvdb OpenVDB::openvdb OpenVDB::nanovdb)
+target_compile_definitions(nvdb_to_vdb PRIVATE "NANOVDB_USE_OPENVDB")
+target_link_libraries(nvdb_to_vdb OpenVDB::openvdb OpenVDB::nanovdb)
